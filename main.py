@@ -63,4 +63,4 @@ def ratelimit_handler(e):
 
 # change to your likings, params are "ip", "port", "threaded"
 if __name__ == '__main__':
-    app.run(threaded=False, port=5000)
+    app.run(threaded=False, host='0.0.0.0', port=5000)

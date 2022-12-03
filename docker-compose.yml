@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+    web:
+        container_name: dz_streamlink_web
+        restart: always
+        build: ./
+        volumes:
+            - ./:/code/
+        ports:
+            - 5000:5000
+        networks:
+            - scoobydoo
+        stop_signal: SIGINT
+
+networks:
+    scoobydoo:
+        external: true
