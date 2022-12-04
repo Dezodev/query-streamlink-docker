@@ -7,8 +7,8 @@ services:
         build: ./
         volumes:
             - ./:/code/
-        ports:
-            - 5000:5000
+        # ports:
+        #    - 5000:5000
         networks:
             - scoobydoo
         stop_signal: SIGINT
